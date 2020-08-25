@@ -41,19 +41,19 @@
 		</div>
 
 		<div id="destaque"> 
-			<dir class="destaque-post">
+			<div class="destaque-post">
 
 				<?php query_posts('category_name='.$ordem[0].'&offset=0&showposts=1'); ?>
 				<?php if(have_posts()):while (have_posts()) : the_post();?>
 
 					<a href="<?php the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-					<dir class="destaque-info">
+					<div class="destaque-info">
 						<ul>
 							<li class="dest-autor"><?php the_author();?></li>
 							<li class="dest-views"><?php if(function_exists('the_views')){ the_views(); } ?></li>
 							<li class="dest-coment"><?php comments_number('0','1','%'); ?></li>
 						</ul>
-					</dir>
+					</div>
 					<h1><a href="<?php the_Permalink(); ?>"><?php the_title() ?></a></h1>
 
 				<?php endwhile;else: ?>
@@ -75,20 +75,20 @@
 			</ul>
 		</div>
 
-	</dir> <!-- fim destaque-post-->
+	</div> <!-- fim destaque-post-->
 
-	<dir class="destaque-post right">
+	<div class="destaque-post right">
 		<?php query_posts('category_name='.$ordem[0].'&offset=1&showposts=1'); ?>
 		<?php if(have_posts()):while (have_posts()) : the_post();?>
 
 			<a href="<?php the_Permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-			<dir class="destaque-info">
+			<div class="destaque-info">
 				<ul>
 					<li class="dest-autor"><?php the_author();?></li>
 					<li class="dest-views"><?php if(function_exists('the_views')){ the_views(); } ?></li>
 					<li class="dest-coment"><?php comments_number('0','1','%'); ?></li>
 				</ul>
-			</dir>
+			</div>
 			<h1><a href="<?php the_Permalink(); ?>"><?php the_title() ?></a></h1>
 
 		<?php endwhile;else: ?>
@@ -110,7 +110,7 @@
 	</ul>
 </div>
 
-</dir> <!-- fim destaque-post-->
+</div> <!-- fim destaque-post-->
 
 
 </div> <!--fim destaque-->
@@ -134,7 +134,7 @@
 					<li class="dest-coment"><?php comments_number('0','1','%'); ?></li>
 				</ul>
 			</div>
-			<p><?php the_excerpt_rereloaded(20,'Veja Mais'); ?></p>
+			<p><?php #the_excerpt_rereloaded(20,'Veja Mais'); ?></p>
 
 		</div> <!-- post-tec -->
 	<?php endwhile;else: ?>
@@ -160,7 +160,7 @@
 				</ul>
 			</div>
 
-			<p><?php the_excerpt_rereloaded(20,'Leia Mais'); ?></p>
+			<p><?php #the_excerpt_rereloaded(20,'Leia Mais'); ?></p>
 		</div> <!-- fim post-entreterimento -->
 	<?php endwhile;else: ?>
 <?php endif;?>
