@@ -2,7 +2,7 @@
 
 Tema para wordpress
 
-Antigo tema ultilizado np site [crtr19](http://crtr19.gov.br) antes da migração para outro tema.
+Antigo tema utilizado no site [crtr19.gov.br](http://crtr19.gov.br) antes da migração para outro tema.
 
 ## Tabela de Conteúdo
 
@@ -19,7 +19,7 @@ Antigo tema ultilizado np site [crtr19](http://crtr19.gov.br) antes da migraçã
 
 ## Descrição
 
-Um simples tema ultilizado por alguns anos.
+Um simples tema utilizado por alguns anos.
 
 ## Pré-requisitos
 
