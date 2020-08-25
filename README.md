@@ -38,8 +38,8 @@ $ cd tema-wordpress-crtr19
 # Para iniciar os containers
 $ docker-compose up -d
 
-# O wordpress inciará em http://localhost:8080
-# O Adminer inciará em http://localhost:8888
+# O wordpress inciará em [http://localhost:8080](http://localhost:8080) 
+# O Adminer inciará em [http://localhost:8888](http://localhost:8888) 
 # Laravel development server started: 
 
 # Para parar os containers
